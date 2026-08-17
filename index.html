@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiAnime - O Aplicativo Definitivo para Amantes de Animes e Mangás</title>
+    <meta name="description" content="Monitore seu progresso, veja lançamentos semanais na agenda, analise suas estatísticas, gere artes para o TikTok e sincronize com o MyAnimeList com o CiAnime.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icone.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ambient Background Gradients -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo-simbolo-tema.png" alt="CiAnime Logo Símbolo" class="logo-symbol">
+                <span class="logo-text">Ci<span>Anime</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">Recursos</a>
+                <a href="#screens" class="nav-link">Telas</a>
+                <a href="#plus-ultra" class="nav-link-premium">Plus Ultra</a>
+                <a href="terms.html" class="nav-link">Termos e Privacidade</a>
+            </nav>
+            
+            <a href="#download" class="btn btn-primary btn-nav">Baixar App</a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge-premium-glow">
+                    <i data-lucide="sparkles" class="icon-spark"></i> Versão 1.2.1 Disponível
+                </div>
+                <h1 class="hero-title">O aplicativo definitivo para os <span class="gradient-text">Cinéfilos de Anime</span></h1>
+                <p class="hero-subtitle">Monitore sua jornada otaku com estilo. Controle animes e mangás, acesse a agenda de lançamentos, analise suas estatísticas e crie conteúdos incríveis para redes sociais.</p>
+                
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary btn-large">
+                        <i data-lucide="play" class="icon-btn"></i> Baixar para Android
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-large">
+                        Saber Mais <i data-lucide="arrow-right" class="icon-btn"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Focado em Otakus</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">MAL</span>
+                        <span class="stat-label">Sincronização Ativa</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">TikTok</span>
+                        <span class="stat-label">Gerador Integrado</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <img src="assets/splash_screen.png" alt="CiAnime App Splash Screen" class="app-screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Construído para quem <span class="gradient-text">vive anime</span></h2>
+                <p class="section-subtitle">Diga adeus às planilhas e apps lentos. O CiAnime oferece uma interface moderna e rápida com tudo que você precisa para catalogar suas obras.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="check-square" class="feature-icon"></i>
+                    </div>
+                    <h3>Controle de Progresso</h3>
+                    <p>Atualize de forma simples e intuitiva o episódio ou capítulo atual. Defina status como Assistindo, Lendo, Concluído, Planejado ou Dropado.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="calendar" class="feature-icon"></i>
+                    </div>
+                    <h3>Agenda de Lançamentos</h3>
+                    <p>Acompanhe o cronograma semanal de lançamentos. O app busca automaticamente os horários de exibição diretamente da API GraphQL do AniList.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="bar-chart-3" class="feature-icon"></i>
+                    </div>
+                    <h3>Estatísticas Detalhadas</h3>
+                    <p>Veja gráficos radial/donut de status, média de notas, gêneros favoritos e uma estimativa de quanto tempo você já dedicou aos seus animes.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="video" class="feature-icon"></i>
+                    </div>
+                    <h3>Gerador de Artes TikTok</h3>
+                    <p>Gere imagens com suas críticas e primeiras impressões em alta resolução (1080x1920) prontas para compartilhar no TikTok ou Instagram com efeito neon.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="refresh-cw" class="feature-icon"></i>
+                    </div>
+                    <h3>Sincronização MyAnimeList</h3>
+                    <p>Integração oficial OAuth2 PKCE com o MyAnimeList. Compare seu progresso e sincronize tudo bidirecionalmente em poucos cliques.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i data-lucide="users" class="feature-icon"></i>
+                    </div>
+                    <h3>Dubladores e Estúdios</h3>
+                    <p>Navegue por perfis de dubladores (seiyuus), personagens com biografias traduzidas e catálogos de obras organizadas por estúdios de produção.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Screens Section -->
+    <section class="screens" id="screens">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Uma Experiência Visual <span class="gradient-text">Premium</span></h2>
+                <p class="section-subtitle">Criado seguindo a risca a identidade visual dark e neon. Confira algumas das principais interfaces do aplicativo.</p>
+            </div>
+            
+            <div class="screens-carousel">
+                <div class="screen-item active">
+                    <div class="screen-image-container">
+                        <img src="assets/splash_screen.png" alt="Tela de Splash" class="app-screen-img">
+                    </div>
+                    <div class="screen-details">
+                        <h3>Design Imersivo</h3>
+                        <p>Tela de entrada limpa que define o tom premium com o fundo cinza profundo (#0D0E12) e transições suaves.</p>
+                    </div>
+                </div>
+                
+                <div class="screen-item">
+                    <div class="screen-image-container">
+                        <!-- We use our brand banner or symbol for representing the app UI in lack of specific screenshots -->
+                        <div class="app-screen-placeholder">
+                            <img src="assets/logo-completa-tema.png" alt="Logo Completo" class="placeholder-logo">
+                            <div class="placeholder-ui">
+                                <div class="ui-header"></div>
+                                <div class="ui-card"></div>
+                                <div class="ui-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screen-details">
+                        <h3>Modo Dark & Emerald</h3>
+                        <p>Interface inteiramente otimizada para visualização noturna confortável, com toques vibrantes em verde esmeralda (#4ADE80).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plus Ultra Premium Tier Section -->
+    <section class="plus-ultra" id="plus-ultra">
+        <div class="container">
+            <div class="premium-box">
+                <div class="premium-badge-tag">RECURSO EXCLUSIVO</div>
+                <h2 class="premium-title">Torne-se <span class="text-gold">Plus Ultra!</span></h2>
+                <p class="premium-description">Desbloqueie todo o potencial do seu controle de animes e mangás. Assine e tenha acesso imediato a recursos avançados criados para os fãs mais dedicados.</p>
+                
+                <div class="premium-grid">
+                    <div class="premium-features-list">
+                        <div class="premium-list-item">
+                            <i data-lucide="check-circle-2" class="icon-check-premium"></i>
+                            <div>
+                                <h4>Controle Completo de Mangás</h4>
+                                <p>Monitore volumes e capítulos lidos dos seus mangás favoritos de forma integrada ao Firestore.</p>
+                            </div>
+                        </div>
+                        <div class="premium-list-item">
+                            <i data-lucide="check-circle-2" class="icon-check-premium"></i>
+                            <div>
+                                <h4>Agenda Semanal Avançada</h4>
+                                <p>Acesse o calendário completo com notificações locais de lançamentos de episódios configuradas no seu fuso horário.</p>
+                            </div>
+                        </div>
+                        <div class="premium-list-item">
+                            <i data-lucide="check-circle-2" class="icon-check-premium"></i>
+                            <div>
+                                <h4>Sincronização Ilimitada MyAnimeList</h4>
+                                <p>Sincronize sua biblioteca instantaneamente usando o fluxo oficial OAuth2 PKCE.</p>
+                            </div>
+                        </div>
+                        <div class="premium-list-item">
+                            <i data-lucide="check-circle-2" class="icon-check-premium"></i>
+                            <div>
+                                <h4>Gerador de Cards TikTok e Perfil Exclusivo</h4>
+                                <p>Acesso às ferramentas exclusivas de customização de críticas e exportação de artes neon.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-card-pricing">
+                        <div class="pricing-header">
+                            <span class="plan-name">Assinatura Mensal</span>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="amount">11,90</span>
+                                <span class="period">/mês</span>
+                            </div>
+                            <p class="pricing-info">Gerenciado com segurança via RevenueCat e Google Play Billing.</p>
+                        </div>
+                        <div class="pricing-cta">
+                            <a href="#download" class="btn btn-premium-cta">Assinar no Aplicativo</a>
+                            <span class="cta-note">Experimente de graça no seu dispositivo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container text-center">
+            <h2 class="section-title">Pronto para elevar seu nível Otaku?</h2>
+            <p class="section-subtitle">Instale o CiAnime agora mesmo no seu dispositivo Android e comece a catalogar sua biblioteca com o melhor design.</p>
+            
+            <div class="download-buttons">
+                <!-- Google Play Button representation -->
+                <div class="playstore-badge">
+                    <i data-lucide="play" class="badge-icon-google"></i>
+                    <div class="badge-text">
+                        <span class="sub">Disponível no</span>
+                        <span class="main">Google Play</span>
+                    </div>
+                </div>
+                <div class="apk-download-badge">
+                    <i data-lucide="download" class="badge-icon-download"></i>
+                    <div class="badge-text">
+                        <span class="sub">Download direto</span>
+                        <span class="main">Arquivo APK</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="download-footer-note">Requer Android 8.0 ou superior. Login seguro com sua conta do Google.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo-simbolo-tema.png" alt="CiAnime Logo Símbolo" class="logo-symbol">
+                    <span class="logo-text">Ci<span>Anime</span></span>
+                </a>
+                <p>O aplicativo feito de fã para fã. Monitore, analise e compartilhe sua paixão por animes e mangás.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="#features">Recursos</a>
+                <a href="#screens">Telas</a>
+                <a href="#plus-ultra">Assinatura Premium</a>
+                <a href="#download">Baixar</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="terms.html">Termos de Uso</a>
+                <a href="terms.html#privacy">Política de Privacidade</a>
+                <a href="mailto:contato@cianime.com">Suporte</a>
+            </div>
+
+            <div class="footer-socials">
+                <h4>Siga o canal</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/cinefilodeanime" target="_blank" aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@cinefilodeanime" target="_blank" aria-label="TikTok">
+                        <i data-lucide="video"></i>
+                    </a>
+                    <a href="https://youtube.com/@cinefilodeanime" target="_blank" aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+                </div>
+                <span class="channel-handle">@cinefilodeanime</span>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 CiAnime. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Newton Galiza.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
